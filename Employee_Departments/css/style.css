@@ -1,0 +1,77 @@
+body {
+    background-color: aliceblue;
+    font-family: Montserrat;
+    text-align: center;
+}
+table, footer {
+    margin-top: 60px;
+}
+form {
+    background-color: #cfe2ff;
+    padding: 15px;
+    width: 60%;
+    max-width: 600px;
+    margin: 60px auto;
+}
+textarea {
+    font-family: sans-serif;
+}
+button{
+    padding: 10px;
+    background-color: #0d6efd;
+    border-style: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+.btn-w-150 {
+    width: 150px;
+}
+.nav-link {
+    color: #fff;
+}
+.nav-active {
+    background-color: rgb(68, 68, 68);
+}
+.main {
+    margin: auto;
+}
+.heading {
+    text-align: left;
+    padding: 10px 15px;
+    margin: 5px;
+}
+.input-box {
+    padding: 10px;
+    text-align: left;
+    margin: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
+    width: 90%;
+}
+.btn-delete {
+    background-color: crimson;
+    padding: 0;
+}
+.btn-edit{
+    padding: 0;
+}
+.fa-solid {
+    padding: 10px;
+}
+.top {
+    margin: 5px 20px;
+    margin-top: 60px;
+}
+.search {
+    width: 30%;
+    left: 20px;
+}
+.btn-search {
+    margin-right: 5px;
+}
+.tableParent {
+    width: 80%; 
+    margin: auto;
+}

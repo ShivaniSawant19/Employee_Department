@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5ab07a6bfb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="employee_add_edit.html" class="nav-link">Add Employee</a></li>
+                    <li class="nav-item"><a href="employees.html" class="nav-link">Employee List</a></li>
+                    <li class="nav-item nav-active"><a href="department_add_edit.html" class="nav-link">Add Department</a></li>
+                    <li class="nav-item"><a href="departments.html" class="nav-link">Department List</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form id="mainForm" autocomplete="off">
+        <div class="main">
+            <div class="heading"></div>
+            <div><label id="deptId" class="input-box" type="text" placeholder="Department ID" disabled>Department ID:</label></div>
+            <!-- <div><input id="deptId" class="input-box" type="text" placeholder="department ID" disabled/></div> -->
+            <div><input id="deptName" name="deptName" class="input-box" type="text" placeholder="Department name"/></div>
+            <div>
+                <button id="submit" class="btn btn-w-150 btn-primary" type="submit">Submit</button>
+                <button id="cancel" class="btn btn-w-150 btn-warning">Cancel</button>
+            </div>            <!-- <div><button id="showTable" class="btn btn-w-150 btn-dark" onclick="window.location.href='departments.html'") type="button">Show Table</button></div> -->
+        </div>
+    </form>
+
+    <button id="addbutton" class="btn btn-search btn-success"><a href="departments.html" class="nav-link">Department List</a></button>
+    <script src="../Scripts/department.js" type="module"></script>
+    <script>
+        window.onunload = localStorage.removeItem('search');
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5ab07a6bfb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+        <title>
+            This is the employees listing page
+        </title>
+
+       <script type="module" src="..\Scripts\employees.js" ></script>
+    </head>
+    
+        <!-- you will have the menu built here -->
+        <!-- this part will be copied to all the remaining four pages -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="employee_add_edit.html" class="nav-link">Add Employee</a></li>
+                        <li class="nav-item nav-active"><a href="employees.html" class="nav-link">Employee List</a></li>
+                        <li class="nav-item"><a href="department_add_edit.html" class="nav-link">Add Department</a></li>
+                        <li class="nav-item"><a href="departments.html" class="nav-link">Department List</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="top row">
+            <div class="search input-group col-2">
+                <input id="search" type="search" class="form-control rounded" placeholder="Type to search..." aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-search btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="clear-btn" type="reset" class="btn btn-primary">Clear</button><br>
+            </div>   
+        </div>
+
+        <div>
+            <button id="addbutton" class="btn btn-search btn-success"><a href="employee_add_edit.html" class="nav-link">Add Employee</a></button>
+            <div class="tableParent">
+                <table id="tbl_employees" class="table table-light">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Employee ID</th>
+                            <th scope="col">Employee Name</th>
+                            <th scope="col">Employee Age</th>
+                            <!-- <th scope="col">Method description</th> -->
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="root">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="divNavigation">
+                <input id="firstPage" class="btn btn-light" type="button" value="First"/>
+                <input id="prevPage" class="btn btn-light" type="button" value="Prev"/>
+                <input id="nextPage" class="btn btn-light" type="button" value="Next"/>
+                <input id="lastPage" class="btn btn-light" type="button" value="Last"/>
+
+            </div>
+        </div>
+    </body>
+    </html>
